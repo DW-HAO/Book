@@ -1,0 +1,41 @@
+﻿@using Book.
+@{
+    ViewBag.Title = "First";
+}
+
+<h2>First</h2>
+
+<h3>百度一下 你就知道</h3>
+
+<a href="https://www.baidu.com">百！</a>
+
+<br />
+
+<div>
+    @{
+        var fish = 8;
+        var person = "bigfish";
+    }
+    <p>fish是什么 @fish</p>
+    <p>person是什么？@person</p>
+
+    @{
+        int i = 8;
+    }
+    @if (i == 5)
+    {
+        <p>等于5</p>
+    }
+    else
+    {
+        <p>不知道</p>
+    }
+
+    @for (int num = 0; num < 10; num++)
+    {
+        <p>@i+1</p>
+    }
+    <br />
+ 
+</div>
+
